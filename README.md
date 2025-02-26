@@ -20,3 +20,6 @@ Welcome to the Hangman Game built with Streamlit! This fun and interactive app b
 2. Install the dependencies:
    ```bash
    pip install -r requirements.txt
+3. ```bash
+    streamlit run app.py
+   
