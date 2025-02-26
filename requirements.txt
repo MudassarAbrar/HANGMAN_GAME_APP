@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 streamlit
 streamlit-lottie==0.0.4
 requests==2.28.1
+=======
+streamlit
+streamlit-lottie==0.0.4
+requests==2.28.1
+>>>>>>> 177ece1150419185315840c87f834d782000022c
