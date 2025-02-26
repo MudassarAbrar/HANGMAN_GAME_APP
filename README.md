@@ -1,6 +1,6 @@
 # Hangman Game 🎮
 
-Welcome to the Hangman Game built with Streamlit! This fun and interactive app brings the classic Hangman game to life with modern features and animations. Test your guessing skills and see if you can uncover the hidden word before the hangman is fully drawn! 🍎🍌🍒
+Welcome to the Hangman Game built with Streamlit! This fun and interactive app brings the classic Hangman game to life with modern features and animations. Test your guessing skills as you try to uncover hidden words before the hangman is complete! 🍎🍌🍒
 
 ## Features ✨
 - **Dynamic Hangman Visuals:** Watch the hangman progress as you play.  
@@ -20,6 +20,3 @@ Welcome to the Hangman Game built with Streamlit! This fun and interactive app b
 2. Install the dependencies:
    ```bash
    pip install -r requirements.txt
-3. ```bash
-   streamlit run app.py
- 
