@@ -5,6 +5,8 @@ from streamlit_lottie import st_lottie
 import requests
 import os
 import json
+import time
+
 # Hangman ASCII art dictionary
 hangman_phases = {
     0: """
@@ -187,6 +189,7 @@ if st.session_state.counter == 1:
                  # Display the animation
                 with animation_placeholder:
                  st_lottie(happy_animation_data, height=200, width=200,speed=1)
+                time.sleep(3)
                
             else:
                 # Increment wrong guesses for incorrect guesses
@@ -194,6 +197,7 @@ if st.session_state.counter == 1:
                 placeholder.error(f"Wrong guess: {guess}")
                 with animation_placeholder:
                  st_lottie(sad_animation_data, height=200, width=200,speed=1)
+                time.sleep(3)
             # Track guessed letters and reset input
             st.session_state.guessed_letters.append(guess)
             st.session_state.input_value = ""  # Clear the input field
