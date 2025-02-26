@@ -163,7 +163,8 @@ if st.session_state.counter == 1:
         st.text(hangman_phases[st.session_state.wrong_guesses])
 
         # Display the current word progress
-        st.subheader("Word Progress")
+        st.subheader("GUESS THE WORD")
+        st.caption("Guess the word according to the blanks below")
         st.title(" ".join(st.session_state.display))
         
         
@@ -188,16 +189,16 @@ if st.session_state.counter == 1:
                 placeholder.success(f"Good guess: {guess}")
                  # Display the animation
                 with animation_placeholder:
-                 st_lottie(happy_animation_data, height=200, width=200,speed=1)
-                time.sleep(3)
+                 st_lottie(happy_animation_data, height=150, width=150,speed=1)
+                time.sleep(2)
                
             else:
                 # Increment wrong guesses for incorrect guesses
                 st.session_state.wrong_guesses += 1
                 placeholder.error(f"Wrong guess: {guess}")
                 with animation_placeholder:
-                 st_lottie(sad_animation_data, height=200, width=200,speed=1)
-                time.sleep(3)
+                 st_lottie(sad_animation_data, height=150, width=150,speed=1)
+                time.sleep(2)
             # Track guessed letters and reset input
             st.session_state.guessed_letters.append(guess)
             st.session_state.input_value = ""  # Clear the input field
