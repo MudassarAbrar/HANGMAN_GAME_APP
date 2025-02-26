@@ -186,14 +186,14 @@ if st.session_state.counter == 1:
                 placeholder.success(f"Good guess: {guess}")
                  # Display the animation
                 with animation_placeholder:
-                 st_lottie(happy_animation_data, height=200, width=200,speed=0.2)
+                 st_lottie(happy_animation_data, height=200, width=200,speed=1)
                
             else:
                 # Increment wrong guesses for incorrect guesses
                 st.session_state.wrong_guesses += 1
                 placeholder.error(f"Wrong guess: {guess}")
                 with animation_placeholder:
-                 st_lottie(sad_animation_data, height=200, width=200,speed=0.2)
+                 st_lottie(sad_animation_data, height=200, width=200,speed=1)
             # Track guessed letters and reset input
             st.session_state.guessed_letters.append(guess)
             st.session_state.input_value = ""  # Clear the input field
